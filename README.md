@@ -31,19 +31,15 @@ https://zhaoxuehua.github.io/jQuery-examples/jQuery/eventKeyCode
 https://zhaoxuehua.github.io/jQuery-examples/jQuery/HighlightBox
 
 隔行变色   鼠标放上高亮显示，移开恢复   链接如下：
-
 https://zhaoxuehua.github.io/jQuery-examples/jQuery/InterlacedDiscoloration
 
 京东Tab栏切换模拟  放到哪个盒子，显示对应的内容   链接如下：
-
 https://zhaoxuehua.github.io/jQuery-examples/jQuery/jingdongTab
 
 开关灯模拟   链接如下：
-
 https://zhaoxuehua.github.io/jQuery-examples/jQuery/OpenToTurnOffThelights
 
 淘宝服饰  点击左右两侧按钮，中间区域显示对应图片   链接如下：
-
 https://zhaoxuehua.github.io/jQuery-examples/jQuery/taobaofushi
 
 下拉菜单模拟   链接如下：
