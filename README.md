@@ -3,7 +3,7 @@ jQuery study and some examples
 
 点击不同的标题，会出现不同的盒子。链接如下：
 
-https://zhaoxuehua.github.io/jQuery-examples/jQuery/accordion
+https://zhaoxuehua.github.io/jQuery-examples/jQuery/11
 
 
 全选反选框案例  点击上面的按钮，下面的所有多选框和其一致，点击下面的多选框，全选了上面才选   链接如下：
