@@ -15,9 +15,11 @@ https://zhaoxuehua.github.io/jQuery-examples/jQuery/AllTheSelected
 
 https://zhaoxuehua.github.io/jQuery-examples/jQuery/ChooseFruit
 
-
+动态输入案例 页面加载的时候每隔固定时间，添加一个字符。 链接如下：
 
 https://zhaoxuehua.github.io/jQuery-examples/jQuery/dongtaishuru
+
+动态创建表格。点击按钮，创建表格，并显示  链接如下：
 
 https://zhaoxuehua.github.io/jQuery-examples/jQuery/DynamicTableCreation
 
