@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    div {
+        width: 944px;
+        margin: 50px auto 0;
+    }
+</style>
+    <script src="jquery-1.11.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            var button=document.getElementsByTagName("button");
+            var bd=$("body");
+            $(button[0]).click(function(){
+                bd[0].style.backgroundColor="white";
+            });
+            $(button[1]).click(function(){
+                bd[0].style.backgroundColor="black";//jquery对象转换成js
+            });
+        });
+    
+    
+    
+    </script>
+</head>
+<body>
+    <button>开灯</button>
+    <button>关灯</button>
+    <div>
+        <img src="imgs/coder.jpg" alt="">
+    </div>
+    
+</body>
+</html>

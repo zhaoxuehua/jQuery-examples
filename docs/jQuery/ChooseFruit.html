@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        select {
+            width: 170px;
+            height: 200px;
+            font-size: 16px;
+            background-color: #a4ff43;
+        }
+    </style>
+    <script src="jquery-1.11.1.js"></script>
+    <script>
+        $(function () {
+            $("button:eq(0)").click(function(){
+                $("#sel2").append( $("#sel1 option"))  ;
+            })
+            $("button:eq(1)").click(function(){
+                $("#sel1").append( $("#sel2 option"))  ;
+            })
+            $("button:eq(2)").click(function(){
+                $("#sel2").append($("#sel1 option:selected"))  ;
+            })
+            $("button:eq(3)").click(function(){
+                $("#sel1").append($("#sel2 option:selected"))  ;
+            })
+        });
+
+    </script>
+</head>
+
+<body>
+
+    <select id="sel1" multiple>
+        <option value="">苹果</option>
+        <option value="">香蕉</option>
+        <option value="">橘子</option>
+        <option value="">葡萄</option>
+    </select>
+
+    <button>>>></button>
+    <button><<<</button>
+   <button>></button>
+    <button> <</button>
+
+
+    <select id="sel2" multiple>
+     <option value=""></option>
+    <option value=""></option>
+    <option value=""></option>
+    <option value=""></option>
+     </select>                 
+
+</body>
+
+</html>

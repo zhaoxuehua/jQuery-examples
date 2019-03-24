@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        body {
+            background: #000;
+        }
+
+        .wrap {
+            margin: 100px auto 0;
+            width: 630px;
+            height: 394px;
+            padding: 10px 0 0 10px;
+            background: #000;
+            overflow: hidden;
+            border: 1px solid #fff;
+        }
+
+        .wrap li {
+            float: left;
+            margin: 0 10px 10px 0;
+
+        }
+       .wrap img {
+            display: block;
+            border: 0;
+        }
+    </style>
+    <script src="jquery-1.11.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            //需求：鼠标放入li中，其他的li半透明，当前盒子，opacity值为1；离开wrap的时候所有的li全部opacity值为1；
+            $(".wrap li").mouseenter(function () {
+                $(this).css("opacity", 1).siblings().css("opacity", 0.5);
+            });
+            $(".wrap").mouseleave(function () {
+                $("li").css("opacity", 1);
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+    <div class="wrap">
+        <ul>
+            <li>
+                <a href="#">
+                    <img src="imgs/01.jpg" alt="" />
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="imgs/02.jpg" alt="" />
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="imgs/03.jpg" alt="" />
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="imgs/04.jpg" alt="" />
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="imgs/05.jpg" alt="" />
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="imgs/06.jpg" alt="" />
+                </a>
+            </li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

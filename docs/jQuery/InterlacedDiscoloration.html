@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="jquery-1.11.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            var jqli=$("li");
+            //给奇数偶数行赋原始色
+            var jqli1 = $("li:odd");
+            var jqli2 = $("li:even");
+            jqli1.css("background","red");
+            jqli2.css("background","yellow");
+            var color="";
+            jqli.mouseenter(function(){
+                //记录原始颜色
+                color = $(this).css("background");
+                $(this).css("background","blue");
+            });
+            jqli.mouseleave(function(){
+                //记录原始颜色           
+                $(this).css("background",color);//此时color不可以用引号
+            });
+        });    
+    </script>
+</head>
+<body>
+    <ul>
+        <li>努力努力，量的积累会引起质的变化</li>
+        <li>努力努力，量的积累会引起质的变化</li>
+        <li>努力努力，量的积累会引起质的变化</li>
+        <li>努力努力，量的积累会引起质的变化</li>
+        <li>努力努力，量的积累会引起质的变化</li>
+        <li>努力努力，量的积累会引起质的变化</li>
+    </ul>  
+</body>
+</html>

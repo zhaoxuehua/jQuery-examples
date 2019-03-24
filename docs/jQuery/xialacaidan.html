@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>下拉菜单</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .wrap {
+            width: 330px;
+            height: 30px;
+            margin: 100px auto 0;
+            padding-left: 10px;
+            background-image: url(imgs/bg.jpg);
+        }
+
+        .wrap li{
+            background-image: url(imgs/libg.jpg);
+        }
+
+        .wrap > ul > li {
+            float: left;
+            margin-right: 10px;
+            position: relative;
+        }
+
+        .wrap a {
+            display: block;
+            height: 30px;
+            width: 100px;
+            text-decoration: none;
+            color: #000;
+            line-height: 30px;
+            text-align: center;
+        }
+
+        .wrap li ul {
+            position: absolute;
+            top: 30px;
+            display: none;
+        }
+    </style>
+    <script src="jquery-1.11.1.js"></script>
+    <script>
+        $(document).ready(function(){
+             //需求：鼠标放入一级li中，让他里面的ul显示。移开隐藏。
+             var jqli=$(".wrap>ul>li");//获取到的数组
+             //var jqul=$(".wrap>ul>li>ul");
+             jqli.mouseenter(function(){
+                //jqul.show();不可以，因为没有遍历，即：不管放到哪个li都会显示，所以用到this
+               // $(this).children("ul").show();
+                $(this).children("ul").stop().slideDown(2000);//立即停止当前的，执行后续的
+
+             });
+             jqli.mouseleave(function(){
+                //jqul.show();不可以，因为没有遍历，即：不管放到哪个li都会显示，所以用到this
+                $(this).children("ul").stop().slideUp();//立即停止当前的，执行后续的
+             });
+        });   
+    
+    </script>
+</head>
+<body>
+        <div class="wrap">
+                <ul>
+                    <li>
+                        <a href="javascript:void(0);">一级菜单1</a>
+                        <ul>
+                            <li><a href="javascript:void(0);">二级菜单1</a></li>
+                            <li><a href="javascript:void(0);">二级菜单2</a></li>
+                            <li><a href="javascript:void(0);">二级菜单3</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">一级菜单1</a>
+                        <ul>
+                            <li><a href="javascript:void(0);">二级菜单1</a></li>
+                            <li><a href="javascript:void(0);">二级菜单2</a></li>
+                            <li><a href="javascript:void(0);">二级菜单3</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">一级菜单1</a>
+                        <ul>
+                            <li><a href="javascript:void(0);">二级菜单1</a></li>
+                            <li><a href="javascript:void(0);">二级菜单2</a></li>
+                            <li><a href="javascript:void(0);">二级菜单3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+    
+</body>
+</html>
